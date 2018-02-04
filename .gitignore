@@ -60,3 +60,4 @@ typings/
 # generated folders
 tmp/
 lib/
+build/
