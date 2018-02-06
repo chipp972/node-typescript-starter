@@ -47,12 +47,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chipp972/cryptobot-op.git"
+    "url": "git+https://github.com/chipp972/node-typescript-starter.git"
   },
   "author": "Nicolas Pierre-Charles <pierrecharles.nicolas@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chipp972/cryptobot-op/issues"
+    "url": "https://github.com/chipp972/node-typescript-starter/issues"
   },
-  "homepage": "https://github.com/chipp972/cryptobot-op#readme"
+  "homepage": "https://github.com/chipp972/node-typescript-starter#readme"
 }
