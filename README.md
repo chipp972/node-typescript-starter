@@ -15,7 +15,7 @@ git init
 npm i
 ```
 
-Then you should modify the package.json and README.md with your project informations.
+Then you should modify the **package.json** and **README.md** with your project informations.
 
 ## Available commands
 
