@@ -1,13 +1,13 @@
 {
-  "name": "node-typescript-starter",
-  "version": "0.1.3",
-  "description": "Boilerplate to kickstart your npm lib",
+  "name": "cryptobot",
+  "version": "0.1.0",
+  "description": "Cryptobot",
   "engineStrict": true,
   "engines": {
     "node": ">=8.9"
   },
-  "main": "./lib/src/index",
-  "typings": "./lib/src/index",
+  "main": "./dist/src/index",
+  "typings": "./dist/src/index",
   "scripts": {
     "clean": "rm -rf lib",
     "format": "prettier --write '{src,test}/**/*.ts'",
@@ -19,7 +19,9 @@
     "test": "mocha test/**/*.test.ts --exit",
     "test-only": "mocha test/**/*.test.ts --exit",
     "test:watch": "mocha --watch --reporter min",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "prestart": "npm run build",
+    "start": "nf start web"
   },
   "husky": {
     "hooks": {
@@ -27,6 +29,7 @@
     }
   },
   "dependencies": {
+    "bittrex-bot": "1.0.1",
     "tslib": "1.9.0"
   },
   "devDependencies": {
@@ -46,11 +49,11 @@
   "author": "Nicolas Pierre-Charles <pierrecharles.nicolas@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chipp972/node-typescript-starter.git"
+    "url": "git+https://github.com/chipp972/cryptobot.git"
   },
-  "homepage": "https://github.com/chipp972/node-typescript-starter#readme",
+  "homepage": "https://github.com/chipp972/cryptobot#readme",
   "bugs": {
-    "url": "https://github.com/chipp972/node-typescript-starter/issues"
+    "url": "https://github.com/chipp972/cryptobot/issues"
   },
   "license": "MIT"
 }

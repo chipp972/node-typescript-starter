@@ -1,13 +1,18 @@
-const hello = (name: string) =>
-  new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(`Hello ${name}`);
-    }, 1000);
-  });
+import { Bot } from 'bittrex-bot';
 
-const helloWorld = async () => {
-  const res = await hello('world');
-  return res;
+const bot = new Bot({
+  apikey: process.env.BITTREX_API_KEY,
+  apisecret: process.env.BITTREX_API_SECRET,
+});
+
+const start = async () => {
+  try {
+    const balance = await bot.getBalance('ltc');
+    console.log(balance);
+  } catch (err) {
+    console.log(err);
+  }
+  process.exit(0);
 };
 
-export default helloWorld;
+start();
